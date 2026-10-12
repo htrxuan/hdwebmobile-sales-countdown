@@ -20,7 +20,7 @@ HDWebmobile Sales Countdown adds three small pieces of urgency to your store:
 * **A store-wide countdown bar** -- set an end time and a line of text; the bar shows the countdown and hides itself when the time passes.
 * **A low-stock label** -- "Only 3 left in stock" on products with managed stock at or below a threshold you choose.
 
-= Why this plugin exists =
+= Security by design =
 Countdown and scarcity plugins are a recurring home for two problems, and this plugin is built so neither can happen:
 
 * **No stored XSS from a timer label.** Every label and every piece of text is set only on the plugin's settings page, saved through WordPress's own Settings API (which enforces the `manage_options` capability and a nonce), sanitised with `sanitize_text_field()`, and printed with `esc_html()`/`esc_attr()`. There is no rich-text field, and nothing a shopper submits is ever displayed. The countdown itself ticks in a small script that only reads a numeric timestamp from a `data-` attribute and only writes `element.textContent` -- it never assigns `innerHTML` and never inserts markup.
