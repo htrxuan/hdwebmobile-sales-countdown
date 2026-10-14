@@ -33,6 +33,9 @@ Countdown and scarcity plugins are a recurring home for two problems, and this p
 * Works on the classic product template and block-based product templates
 * No custom database table, no AJAX, no front-end input
 
+= Enjoying this plugin? =
+If it helps your site, please consider [leaving an honest review on WordPress.org](https://wordpress.org/support/plugin/hdwebmobile-sales-countdown/reviews/#new-post) -- it helps other WordPress users find it. Found a problem or have an idea? Please [open a support topic](https://wordpress.org/support/plugin/hdwebmobile-sales-countdown/) first so it can be fixed.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-sales-countdown` directory, or install the plugin through the WordPress plugins screen directly.
